@@ -217,18 +217,18 @@ class BreedIdentifier:
         if same_breed:
             if pred1.breed == pred2.breed:
                 return (
-                    f"✅ Same Breed — both appear to be {pred1.breed} "
+                    f" Same Breed — both appear to be {pred1.breed} "
                     f"(confidence: {conf_pct})"
                 )
             else:
                 return (
-                    f"✅ Same Breed (likely) — visual similarity suggests the same breed "
+                    f" Same Breed (likely) — visual similarity suggests the same breed "
                     f"despite slightly different model predictions "
                     f"(confidence: {conf_pct})"
                 )
         else:
             return (
-                f"❌ Different Breeds — Image 1 looks like {pred1.breed}, "
+                f" Different Breeds — Image 1 looks like {pred1.breed}, "
                 f"Image 2 looks like {pred2.breed} "
                 f"(confidence: {conf_pct})"
             )
