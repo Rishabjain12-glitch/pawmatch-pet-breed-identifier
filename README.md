@@ -1,11 +1,11 @@
-# 🐾 PawMatch — Pet Breed Identifier
+# Pet Breed Identifier
 
 > **AI module that determines whether two pet photos share the same breed.**  
 > Built with CLIP embeddings + zero-shot classification. Supports 102 dog & cat breeds.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 1. [Quick Start](#-quick-start)
 2. [Approach & Architecture](#-approach--architecture)
 3. [Project Structure](#-project-structure)
@@ -15,7 +15,7 @@
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ```bash
 # 1. Clone / unzip the project
@@ -41,7 +41,7 @@ python cli_demo.py identify cat.jpg
 
 ---
 
-## 🧠 Approach & Architecture
+## Approach & Architecture
 
 ### Model — CLIP (ViT-B/32)
 
@@ -124,7 +124,7 @@ img2 = Image.open("dog_b.jpg")
 result = identifier.compare(img1, img2)
 
 print(result.verdict)
-# ✅ Same Breed — both appear to be Golden Retriever (confidence: 91.3%)
+# Same Breed — both appear to be Golden Retriever (confidence: 91.3%)
 
 print(result.same_breed)       # True
 print(result.confidence)       # 0.913
@@ -168,18 +168,18 @@ streamlit run app.py
 
 ---
 
-## 🌟 Bonus Features
+## Bonus Features
 
-- ✅ **Top-3 breed suggestions** (not just binary output)
-- ✅ **Multi-species support** (dogs + cats in the same model)
-- ✅ **Confidence score** (calibrated from similarity + label agreement)
-- ✅ **Streamlit web app** with dark theme UI
-- ✅ **CLI demo** with coloured terminal output
-- ✅ **Modular design** — `BreedIdentifier` is fully importable as a library
+-  **Top-3 breed suggestions** (not just binary output)
+-  **Multi-species support** (dogs + cats in the same model)
+-  **Confidence score** (calibrated from similarity + label agreement)
+-  **Streamlit web app** with dark theme UI
+-  **CLI demo** with coloured terminal output
+-  **Modular design** — `BreedIdentifier` is fully importable as a library
 
 ---
 
-## 🔬 Dataset & Model Credits
+## Dataset & Model Credits
 
 | Resource | Source |
 |---|---|
